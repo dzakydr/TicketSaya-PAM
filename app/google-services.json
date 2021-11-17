@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "760524838505",
+    "firebase_url": "https://project-ticket-saya.firebaseio.com",
+    "project_id": "project-ticket-saya",
+    "storage_bucket": "project-ticket-saya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760524838505:android:9a816e48c2ac9195",
+        "android_client_info": {
+          "package_name": "com.dzakyapps.tiketsaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760524838505-do3m945vop2543dvjp24of8h78ptfsc0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dzakyapps.tiketsaya",
+            "certificate_hash": "01e5354cfced848f69677593db9d156c4bbfa802"
+          }
+        },
+        {
+          "client_id": "760524838505-6eorcs2jfeie2uj27bgg5gvmeq7m1f4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM7T9s1pDhfgpi5WkMl0v7rjidm0rpmg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760524838505-6eorcs2jfeie2uj27bgg5gvmeq7m1f4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
