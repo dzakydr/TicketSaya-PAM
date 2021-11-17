@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MariWisata</string>
+    <string name="slogan">Wisata Jadi Lebih Asyik</string>
+    <string name="signin">MASUK</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="email_label">Email Address</string>
+    <string name="dashboard">My Dashboard</string>
+</resources>

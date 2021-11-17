@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_gradient_primary_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_layout_white"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingTop="30dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                //untuk isi dalem layout nya.
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:layout_marginBottom="20dp"
+                    android:text="Torri"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackPrimary"
+                    android:textSize="20sp" />
+
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20sp"
+                    android:text="Torii (鳥居) adalah , di kuil Shinto yang merupakan pembatas antara kawasan tempat tinggal manusia dengan kawasan suci tempat tinggal Kami. Selain itu, bangunan ini berfungsi sebagai pintu gerbang kuil.
+
+\n\nBentuk torii berupa dua batang palang sejajar yang disangga dua batang tiang vertikal. Bangunan ini umumnya dicat dengan warna merah (oranye) menyala, dan kadang-kadang juga tidak dicat (warna asli bahan bangunan).
+
+\n\nWalaupun lebih umum dijumpai di jalan masuk ke kuil Shinto, tapi juga bisa ditemukan di mausoleum kekaisaran dan beberapa kuil Buddha di Jepang. Simbol torii dalam peta terbitan Jepang menandakan lokasi kuil Shinto."
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:textSize="20sp"
+                    android:text="Src : https://id.wikipedia.org/wiki/Torii"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/fontisi"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Selfie Spot" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:scrollbars="none">
+
+                    //buat naro gambar nya
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginRight="24dp"
+                            android:src="@drawable/torriselfie1" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginRight="24dp"
+                            android:src="@drawable/toriselfie2" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginRight="24dp"
+                            android:src="@drawable/torriselfie3" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_dashboard"
+                android:layout_width="365dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_btn_blue_primary"
+                android:fontFamily="@font/mmedium"
+                android:text="Back to Dashboard"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

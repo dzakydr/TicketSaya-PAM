@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1230dp"
+            android:background="@drawable/bg_gradient_primary_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_layout_white"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="30dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            //untuk isi dalem layout nya.
+
+            <TextView
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontjudul"
+                android:text="Selfie Spot"
+                android:textAlignment="center"
+                android:textColor="@color/blackPrimary"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/fontisi"
+                android:textSize="18sp"
+                android:text="Menara Pisa" />
+
+            //view menara pisa
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                //buat naro gambar nya
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/selfiepisa1" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/selfiepisa2" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/selfiepisa3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            //Torri
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/fontisi"
+                android:textSize="18sp"
+                android:text="Torri" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                //buat naro gambar nya
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/torriselfie1" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/toriselfie2" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/torriselfie3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            //Pagoda
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/fontisi"
+                android:textSize="18sp"
+                android:text="Pagoda" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none">
+
+                //buat naro gambar nya
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/pagodaselfie1" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/pagodaselfie2" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/pagodaselfie3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            //Borobudur
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/fontisi"
+                android:textSize="18sp"
+                android:text="Borobudur" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none">
+
+                //buat naro gambar nya
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/borobudurselfie1" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/borobudurselfie2" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/borobudurselfie3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            //Spinx
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/fontisi"
+                android:textSize="18sp"
+                android:text="Sphinx" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none">
+
+                //buat naro gambar nya
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/sphinxselfie1" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/sphinxselfie2" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/sphinxselfie3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            //Monas
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/fontisi"
+                android:textSize="18sp"
+                android:text="Monas" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none">
+
+                //buat naro gambar nya
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/selfiemonas1" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/selfiemonas2" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/selfiemonas3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_dashboard"
+            android:layout_width="316dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:fontFamily="@font/mmedium"
+            android:text="Back to Dashboard"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

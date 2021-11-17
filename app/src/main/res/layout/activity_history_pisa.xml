@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_gradient_primary_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_layout_white"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="30dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            //untuk isi dalem layout nya.
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/mregular"
+                android:text="Menara Pisa"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/blackPrimary"
+                android:textSize="20sp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/text_pisa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20sp"
+                android:text="Menara Miring Pisa (Bahasa Italia: Torre pendente di Pisa atau disingkat Torre di Pisa), atau lebih dikenal dengan Menara Pisa, adalah sebuah campanile atau menara lonceng katedral di kota Pisa, Italia.
+
+\n\nMenara Pisa sebenarnya dibuat agar berdiri secara vertikal seperti menara pada umumnya, namun mulai miring tak lama setelah pembangunannya dimulai pada Agustus 1173. Ia terletak di belakang katedral dan merupakan bangunan ketiga Campo dei Miracoli (lapangan pelangi) kota Pisa.
+
+\n\nKetinggian menara ini adalah 55,86 m dari permukaan tanah terendah dan 56,70 m dari permukaan tanah tertinggi. Kelebaran dinding mencapai 4,09 m dan di puncak 2,48 m. Bobotnya diperkirakan mencapai 14.500 ton. Menara Pisa memiliki 294 anak tangga. Dengan adanya menara ini, sektor pendapatan ekonomi bertambah karena adanya objek wisata."
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:textSize="20sp"
+                android:text="Src : https://id.wikipedia.org/wiki/Menara_Pisa"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/fontisi"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:text="Selfie Spot" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none">
+
+                //buat naro gambar nya
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/selfiepisa1" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/selfiepisa2" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/selfiepisa3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_dashboard"
+            android:layout_width="365dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:fontFamily="@font/mmedium"
+            android:text="Back to Dashboard"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
